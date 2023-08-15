@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Meu Blog</title>
+	<style>
+	body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: black;
+			color: white;
+			font-family: Arial, sans-serif;
+		}
+
+    video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+		h1 {
+			color: white;
+			text-align: center;
+			margin-top: 50px;
+		}
+
+		.card {
+			display: inline-block;
+			background-color: white;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+			margin: 20px;
+			width: 300px;
+		}
+
+		.card img {
+			width: 100%;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+		}
+
+		.card h2 {
+			font-size: 24px;
+			margin: 10px;
+			color: #4d4d4d;
+		}
+
+		.card p {
+			font-size: 16px;
+			margin: 10px;
+			color: #8c8c8c;
+		}
+
+		.card button {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 10px;
+			cursor: pointer;
+			border-radius: 5px;
+			transition: background-color 0.3s;
+		}
+
+		.card button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+  <video autoplay muted loop>
+		<source src="imagens/Video.mp4" type="video/mp4">
+	</video>
+
+	<h1>Meu Blog</h1>
+	<div class="card">
+		<img src="imagens/produto1.png" alt="Produto 1">
+		<h2>Produto 1</h2>
+		<p>Descrição do Produto 1.</p>
+		<button>Comprar</button>
+	</div>
+	<div class="card">
+		<img src="imagens/produto2.png" alt="Produto 2">
+		<h2>Produto 2</h2>
+		<p>Descrição do Produto 2.</p>
+		<button>Comprar</button>
+	</div>
+	<div class="card">
+		<img src="imagens/produto3.png" alt="Produto 3">
+		<h2>Produto 3</h2>
+		<p>Descrição do Produto 3.</p>
+		<button>Comprar</button>
+	</div>
+</body>
+</html>
